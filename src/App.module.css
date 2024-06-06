@@ -1,0 +1,20 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;/*a primeira coluna com 256px e a segunda sem medida certa*/
+    gap: 2rem;
+    align-items: flex-start;
+
+}
+/*Quando as telas forem menor do que 768px*/
+@media (max-width: 768px){
+    html{
+        font-size: 87.5%;
+    }
+    .wrapper{
+        grid-template-columns: 1fr;/*o grid terá apenas 1 coluna que ocupa toda largura*/
+    }
+}
